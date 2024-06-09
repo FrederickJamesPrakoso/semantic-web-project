@@ -16,7 +16,7 @@ searchButton.addEventListener("click", function () {
 });
 
 async function fetchData(search, limit) {
-  const endpointUrl = "http://localhost:3030/rumahsakit/";
+  const endpointUrl = process.env.SPARQL_ENDPOINT || "http://localhost:3030/rumahsakit/";
   let sparqlQuery = "";
 
   // Menentukan query berdasarkan apakah ada input pencarian atau tidak

@@ -2,7 +2,7 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "PREFIX id: <https://rumahsakit.com/> \r\nPREFIX data: <https://rumahsakit.com/ns/data#> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n\r\n                \r\nSELECT ?kode ?nama WHERE {\r\n\t?datas\t\t\t\r\n    data:kode ?kode;\r\n    data:nama ?nama;\r\n  \tdata:kabupaten ?kabupaten;\r\n  \tdata:alamat ?alamat;\r\n   \tdata:telepon ?telepon;\r\n    data:pemilik ?pemilik;\r\n    data:kelas ?kelas.\r\n\r\n    FILTER(regex (?nama, \"Zahra\", \"i\"))\r\n  \t\t\t\t\r\n} LIMIT 10",
+    "value": "PREFIX id: <https://rumahsakit.com/> \r\nPREFIX data: <https://rumahsakit.com/ns/data#> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n\r\n                \r\nSELECT * WHERE {\r\n\t?datas\t\t\t\r\n    data:kode ?kode;\r\n    data:nama ?nama;\r\n  \tdata:kabupaten ?kabupaten;\r\n  \tdata:alamat ?alamat;\r\n   \tdata:telepon ?telepon;\r\n    data:pemilik ?pemilik;\r\n    data:kelas ?kelas.\r\n  \t\t\t\t\r\n} LIMIT 10",
     "metadata": {}
   }
 ]
