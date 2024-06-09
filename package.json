@@ -3,6 +3,18 @@
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
-    "papaparse": "^5.4.1"
-  }
+    "csv-parse": "^5.5.6",
+    "papaparse": "^5.4.1",
+    "rdflib": "^2.2.35"
+  },
+  "name": "semantic-web-project",
+  "description": "",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd apache-jena-fuseki-5.0.0 && .\\fuseki-server"
+  },
+  "author": "",
+  "license": "ISC"
 }
