@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog Rumah Sakit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-amber-100 p-6">
+    <div class="container mx-auto">
+      <div class="flex justify-center mb-6">
+        <h1 class="text-4xl font-bold text-amber-800">Katalog Rumah Sakit</h1>
+      </div>
+      <div class="flex justify-between mb-6 gap-5">
+        <div class="flex w-full">
+          <input
+            id="searchInput"
+            type="text"
+            class="border border-amber-400 p-3 w-3/4 rounded-l-lg"
+            placeholder="Cari Rumah Sakit (kode, nama, kabupaten/kota, alamat, pemilik)"
+          />
+          <input
+            id="limitInput"
+            type="number"
+            class="border border-amber-400 p-3 w-1/4 rounded-x-lg"
+            placeholder="Limit"
+          />
+          <button
+            id="searchButton"
+            class="bg-amber-600 text-white p-3 rounded-r-lg"
+          >
+            Cari
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <table
+          id="resultsTable"
+          class="table-auto border-collapse border border-amber-400"
+        >
+          <thead>
+            <tr>
+              <th class="border border-amber-400 px-4 py-2">No</th>
+              <th class="border border-amber-400 px-4 py-2">Kode</th>
+              <th class="border border-amber-400 px-4 py-2">Nama</th>
+              <th class="border border-amber-400 px-4 py-2">Kabupaten/Kota</th>
+              <th class="border border-amber-400 px-4 py-2">Alamat</th>
+              <th class="border border-amber-400 px-4 py-2">Pemilik</th>
+              <th class="border border-amber-400 px-4 py-2">Kelas</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody">
+            <!-- Results will be populated here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
